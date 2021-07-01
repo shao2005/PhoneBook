@@ -1,0 +1,44 @@
+﻿[
+  {
+    "FirstName": "Shai",
+    "LastName": "Oz",
+    "FullName": "Shai Oz",
+    "PhoneNumber": 1111,
+    "IsMale": true
+  },
+  {
+    "FirstName": "Hila",
+    "LastName": "Haor",
+    "FullName": "Hila Haor",
+    "PhoneNumber": 2222,
+    "IsMale": false
+  },
+  {
+    "FirstName": "Amir",
+    "LastName": "Tor",
+    "FullName": "Amir Tor",
+    "PhoneNumber": 3333,
+    "IsMale": true
+  },
+  {
+    "FirstName": "Reut",
+    "LastName": "Benisho",
+    "FullName": "Reut Benisho",
+    "PhoneNumber": 4444,
+    "IsMale": true
+  },
+  {
+    "FirstName": "Dudi",
+    "LastName": "Bachar",
+    "FullName": "Dudi Bachar",
+    "PhoneNumber": 5555,
+    "IsMale": true
+  },
+  {
+    "FirstName": "Yehuda",
+    "LastName": "Levental",
+    "FullName": "Yehuda Levental",
+    "PhoneNumber": 6666,
+    "IsMale": true
+  }
+]

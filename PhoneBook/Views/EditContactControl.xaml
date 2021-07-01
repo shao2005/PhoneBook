@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="PhoneBook.Views.EditContactControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewmodels="clr-namespace:PhoneBook.ViewModels"
+             xmlns:converters="clr-namespace:Phonebook.Converters"
+             d:DataContext="{d:DesignInstance Type=viewmodels:ContactViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <converters:BoolInverterConverter x:Key="BoolInverterConverter"/>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Padding" Value="2 3 0 0"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Margin="20" FontSize="20" FontWeight="Bold"
+                   TextAlignment="Center" Text="Edit Contact" Foreground="#FF0929F3"/>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="_First name:" Grid.Row="1"
+                   Target="{Binding ElementName=editFirstNameTextbox}"/>
+            <TextBox Name="editFirstNameTextbox" Grid.Row="1" Grid.Column="1"
+                     Text="{Binding SelectedContact.FirstName, 
+                UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="_Last name:" Grid.Row="2"
+                   Target="{Binding ElementName=editLastNameTextbox}"/>
+            <TextBox Name="editLastNameTextbox" Grid.Row="2" Grid.Column="1"
+                     Text="{Binding SelectedContact.LastName, 
+                UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="_Phone number:" Grid.Row="3"
+                   Target="{Binding ElementName=editPhoneNumberTextbox}"/>
+            <TextBox Name="editPhoneNumberTextbox" Grid.Row="3" Grid.Column="1"
+                     Text="{Binding SelectedContact.PhoneNumber,
+                UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="_Gender:" Grid.Row="4"/>
+            <WrapPanel Grid.Row="4" Grid.Column="1">
+                <RadioButton VerticalAlignment="Center" Margin="83 10 0 0"
+                             HorizontalAlignment="Center" Content="Male"
+                             IsChecked="{Binding SelectedContact.IsMale}"/>
+                <RadioButton VerticalAlignment="Center" Margin="20 10 0 0"
+                             HorizontalAlignment="Center" Content="Female"
+                             IsChecked="{Binding SelectedContact.IsMale,
+                    Converter={StaticResource BoolInverterConverter}}"/>
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</UserControl>

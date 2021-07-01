@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfContact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Contact FullName="Shai Oz">
+    <FirstName>Shai</FirstName>
+    <LastName>Oz</LastName>
+    <PhoneNumber>1111</PhoneNumber>
+    <IsMale>true</IsMale>
+  </Contact>
+  <Contact FullName="Hila Haor">
+    <FirstName>Hila</FirstName>
+    <LastName>Haor</LastName>
+    <PhoneNumber>2222</PhoneNumber>
+    <IsMale>false</IsMale>
+  </Contact>
+  <Contact FullName="Amir Tor">
+    <FirstName>Amir</FirstName>
+    <LastName>Tor</LastName>
+    <PhoneNumber>3333</PhoneNumber>
+    <IsMale>true</IsMale>
+  </Contact>
+  <Contact FullName="Reut Benisho">
+    <FirstName>Reut</FirstName>
+    <LastName>Benisho</LastName>
+    <PhoneNumber>4444</PhoneNumber>
+    <IsMale>false</IsMale>
+  </Contact>
+  <Contact FullName="Dudi Bachar">
+    <FirstName>Dudi</FirstName>
+    <LastName>Bachar</LastName>
+    <PhoneNumber>5555</PhoneNumber>
+    <IsMale>true</IsMale>
+  </Contact>
+  <Contact FullName="Yehuda Levental">
+    <FirstName>Yehuda</FirstName>
+    <LastName>Levental</LastName>
+    <PhoneNumber>6666</PhoneNumber>
+    <IsMale>true</IsMale>
+  </Contact>
+  <Contact FullName="Matan Faragian">
+    <FirstName>Matan</FirstName>
+    <LastName>Faragian</LastName>
+    <PhoneNumber>7777</PhoneNumber>
+    <IsMale>true</IsMale>
+  </Contact>
+  <Contact FullName="Moti the king Mor">
+    <FirstName>Moti the king</FirstName>
+    <LastName>Mor</LastName>
+    <PhoneNumber>8888</PhoneNumber>
+    <IsMale>true</IsMale>
+  </Contact>
+</ArrayOfContact>

@@ -1,0 +1,9 @@
+﻿<Application x:Class="PhoneBook.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PhoneBook"
+             xmlns:converters="clr-namespace:Phonebook.Converters">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
